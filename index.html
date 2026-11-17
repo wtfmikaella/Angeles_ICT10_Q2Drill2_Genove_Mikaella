@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Volleyball Varsity Club 🏐ྀི</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+    <style>
+        body {
+            background-color: #212028;
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        .container {
+            background-color: #ede9e6;
+            color: #161616;
+            width: 600px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #45453F;
+        }
+
+        h2 {
+            color: #59594F;
+        }
+
+        input {
+            padding: 8px;
+            width: 90%;
+            border: 1px solid #99998F;
+        }
+
+        button {
+            background-color: #6b2f2c;
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            cursor: pointer;
+        }
+
+        hr {
+            border: 1px solid #B8B8A7;
+        }
+
+        #member_list {
+            background-color: #ede9e6;
+            padding: 10px;
+        }
+
+        #total {
+            background-color: #6d2824;
+            color: white;
+            padding: 10px;
+        }
+
+        .footer {
+            color: #ede9e6;
+            text-align: center;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Volleyball Varsity Club 🏐ྀི</h1>
+        <p>Manage and view all club members.</p>
+
+        <h2>Add a New Member</h2>
+
+        <label>First Name:</label>
+        <br>
+        <input type="text" id="first_name">
+
+        <br><br>
+
+        <label>Last Name:</label>
+        <br>
+        <input type="text" id="last_name">
+
+        <br><br>
+
+        <button py-click="add_member">Add Member</button>
+
+        <h2>All Club Members</h2>
+        <div id="member_list"></div>
+
+        <h2>Total Members</h2>
+        <p id="total"></p>
+
+    </div>
+
+    <p class="footer">ICT 10 • Volleyball Varsity Club</p>
+
+    <!-- Connect Python file -->
+    <script type="py" src="./main.py"></script>
+
+</body>
+</html>
